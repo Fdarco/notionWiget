@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f12a406ddac0dc558ef9ed3a1cd6d1e2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f12a406ddac0dc558ef9ed3a1cd6d1e2" ></div>
+        
+</body>
+<script>    
+    
+            var map_f12a406ddac0dc558ef9ed3a1cd6d1e2 = L.map(
+                "map_f12a406ddac0dc558ef9ed3a1cd6d1e2",
+                {
+                    center: [40.74332242, -84.10610676],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6187fb166e5547bd5ac87708b5ca18ac = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var marker_aca193fdb6ee6a74335e1d8c8e12de6b = L.marker(
+                [40.65873478, -83.97565504],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_f1e3089327a1e807323edec8e47801b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aca193fdb6ee6a74335e1d8c8e12de6b.setIcon(icon_f1e3089327a1e807323edec8e47801b0);
+        
+    
+        var popup_b9082106519fb4ec36b9efc9ed90e38a = L.popup({"maxWidth": 200});
+
+        
+            var html_417b4499e28e39b65a5edb41c0e3b5c5 = $(`<div id="html_417b4499e28e39b65a5edb41c0e3b5c5" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 104121</p></div>`)[0];
+            popup_b9082106519fb4ec36b9efc9ed90e38a.setContent(html_417b4499e28e39b65a5edb41c0e3b5c5);
+        
+
+        marker_aca193fdb6ee6a74335e1d8c8e12de6b.bindPopup(popup_b9082106519fb4ec36b9efc9ed90e38a)
+        ;
+
+        
+    
+    
+            var marker_e04cb675d047296d00681b6fc2109295 = L.marker(
+                [40.6587167, -83.98551048],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_f7619ddd437c6a9a5b50a5ff77870b70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e04cb675d047296d00681b6fc2109295.setIcon(icon_f7619ddd437c6a9a5b50a5ff77870b70);
+        
+    
+        var popup_f2598678f1495510451b7669f26425d8 = L.popup({"maxWidth": 200});
+
+        
+            var html_433883f8df493458f16618349b7cb068 = $(`<div id="html_433883f8df493458f16618349b7cb068" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103563</p><p><b>Travel cost:</b> 74.36</p><p><b>Heuristic cost:</b> 29258.52</p></div>`)[0];
+            popup_f2598678f1495510451b7669f26425d8.setContent(html_433883f8df493458f16618349b7cb068);
+        
+
+        marker_e04cb675d047296d00681b6fc2109295.bindPopup(popup_f2598678f1495510451b7669f26425d8)
+        ;
+
+        
+    
+    
+            var marker_d5dc6cbdac7ff290fb9d94c60c8fdbc6 = L.marker(
+                [40.6585867, -84.00042709],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_953925afe81248cb67e2b301741813b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5dc6cbdac7ff290fb9d94c60c8fdbc6.setIcon(icon_953925afe81248cb67e2b301741813b7);
+        
+    
+        var popup_d36d6d8217ce4e9d1ff623827a394e57 = L.popup({"maxWidth": 200});
+
+        
+            var html_d7f25a7d743bc0abc942c60d44e07780 = $(`<div id="html_d7f25a7d743bc0abc942c60d44e07780" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 104116</p><p><b>Travel cost:</b> 210.30</p><p><b>Heuristic cost:</b> 28441.89</p></div>`)[0];
+            popup_d36d6d8217ce4e9d1ff623827a394e57.setContent(html_d7f25a7d743bc0abc942c60d44e07780);
+        
+
+        marker_d5dc6cbdac7ff290fb9d94c60c8fdbc6.bindPopup(popup_d36d6d8217ce4e9d1ff623827a394e57)
+        ;
+
+        
+    
+    
+            var marker_a014058121b5e5fee7b80c403ec383de = L.marker(
+                [40.66591574, -84.00349211],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a9eb622eac5dbae879c54ee71bad3a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a014058121b5e5fee7b80c403ec383de.setIcon(icon_a9eb622eac5dbae879c54ee71bad3a96);
+        
+    
+        var popup_5b32ff74fbed54851c2ce6793c5dddb1 = L.popup({"maxWidth": 200});
+
+        
+            var html_90e54a2b3833d4b4a3f33fefe381482c = $(`<div id="html_90e54a2b3833d4b4a3f33fefe381482c" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103981</p><p><b>Travel cost:</b> 293.67</p><p><b>Heuristic cost:</b> 27651.84</p></div>`)[0];
+            popup_5b32ff74fbed54851c2ce6793c5dddb1.setContent(html_90e54a2b3833d4b4a3f33fefe381482c);
+        
+
+        marker_a014058121b5e5fee7b80c403ec383de.bindPopup(popup_5b32ff74fbed54851c2ce6793c5dddb1)
+        ;
+
+        
+    
+    
+            var marker_ebd133d09d22561e72692b6db68f54ff = L.marker(
+                [40.66597124, -84.0110154],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_efeac980374b020562a4a619860bc5e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ebd133d09d22561e72692b6db68f54ff.setIcon(icon_efeac980374b020562a4a619860bc5e3);
+        
+    
+        var popup_192b20e79418896d93cb6642f343c3f7 = L.popup({"maxWidth": 200});
+
+        
+            var html_2e1ede2976fa805fdbaf20dc09d5bbe5 = $(`<div id="html_2e1ede2976fa805fdbaf20dc09d5bbe5" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100670</p><p><b>Travel cost:</b> 353.70</p><p><b>Heuristic cost:</b> 27235.44</p></div>`)[0];
+            popup_192b20e79418896d93cb6642f343c3f7.setContent(html_2e1ede2976fa805fdbaf20dc09d5bbe5);
+        
+
+        marker_ebd133d09d22561e72692b6db68f54ff.bindPopup(popup_192b20e79418896d93cb6642f343c3f7)
+        ;
+
+        
+    
+    
+            var marker_95ed69dae1177d8429de34d3963f5df1 = L.marker(
+                [40.66595681, -84.02257715],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_ad20e14f3310142138b00257b743a7a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95ed69dae1177d8429de34d3963f5df1.setIcon(icon_ad20e14f3310142138b00257b743a7a6);
+        
+    
+        var popup_216a6f65c0f203598c9df2856443ea5a = L.popup({"maxWidth": 200});
+
+        
+            var html_a382ef0c8306f4ad14c603219e53273a = $(`<div id="html_a382ef0c8306f4ad14c603219e53273a" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100669</p><p><b>Travel cost:</b> 450.94</p><p><b>Heuristic cost:</b> 26620.19</p></div>`)[0];
+            popup_216a6f65c0f203598c9df2856443ea5a.setContent(html_a382ef0c8306f4ad14c603219e53273a);
+        
+
+        marker_95ed69dae1177d8429de34d3963f5df1.bindPopup(popup_216a6f65c0f203598c9df2856443ea5a)
+        ;
+
+        
+    
+    
+            var marker_89ac0152bde5a7db4373cc3b136d2c86 = L.marker(
+                [40.68056686, -84.01326716],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_47859a9b2d3ceb4cd5091cf62976226b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89ac0152bde5a7db4373cc3b136d2c86.setIcon(icon_47859a9b2d3ceb4cd5091cf62976226b);
+        
+    
+        var popup_e62d82c88a42210e7afeba3dcce6128d = L.popup({"maxWidth": 200});
+
+        
+            var html_6c4f6ddc0405c17cc0169229e6317e8d = $(`<div id="html_6c4f6ddc0405c17cc0169229e6317e8d" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103978</p><p><b>Travel cost:</b> 642.38</p><p><b>Heuristic cost:</b> 25880.20</p></div>`)[0];
+            popup_e62d82c88a42210e7afeba3dcce6128d.setContent(html_6c4f6ddc0405c17cc0169229e6317e8d);
+        
+
+        marker_89ac0152bde5a7db4373cc3b136d2c86.bindPopup(popup_e62d82c88a42210e7afeba3dcce6128d)
+        ;
+
+        
+    
+    
+            var marker_5f89ed50a1ed7e93a1be36cb278b8424 = L.marker(
+                [40.68458606, -84.01182486],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_339339a0360895ed9a0282d2aad8930f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f89ed50a1ed7e93a1be36cb278b8424.setIcon(icon_339339a0360895ed9a0282d2aad8930f);
+        
+    
+        var popup_6438ec75b8bb1d7116660d0db43b1072 = L.popup({"maxWidth": 200});
+
+        
+            var html_76411fbaecc8c7d27865592202066f1e = $(`<div id="html_76411fbaecc8c7d27865592202066f1e" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 73</p><p><b>Travel cost:</b> 707.33</p><p><b>Heuristic cost:</b> 25631.26</p></div>`)[0];
+            popup_6438ec75b8bb1d7116660d0db43b1072.setContent(html_76411fbaecc8c7d27865592202066f1e);
+        
+
+        marker_5f89ed50a1ed7e93a1be36cb278b8424.bindPopup(popup_6438ec75b8bb1d7116660d0db43b1072)
+        ;
+
+        
+    
+    
+            var marker_a7b5f873b9f0a87ef36c4656bf6d7812 = L.marker(
+                [40.70222553, -84.013129],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_41c265bc7ba2761a3c2a1d6c84344fe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7b5f873b9f0a87ef36c4656bf6d7812.setIcon(icon_41c265bc7ba2761a3c2a1d6c84344fe1);
+        
+    
+        var popup_1c94de4f20bb323124e6f575e53513bf = L.popup({"maxWidth": 200});
+
+        
+            var html_c5446f5f08565e5721a5278f58f19c19 = $(`<div id="html_c5446f5f08565e5721a5278f58f19c19" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100662</p><p><b>Travel cost:</b> 1023.68</p><p><b>Heuristic cost:</b> 24149.14</p></div>`)[0];
+            popup_1c94de4f20bb323124e6f575e53513bf.setContent(html_c5446f5f08565e5721a5278f58f19c19);
+        
+
+        marker_a7b5f873b9f0a87ef36c4656bf6d7812.bindPopup(popup_1c94de4f20bb323124e6f575e53513bf)
+        ;
+
+        
+    
+    
+            var marker_a1e4e020b5d48699a37781f41c9da1bd = L.marker(
+                [40.70233894, -84.02767725],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_37f5add5b7667e760e91798131593a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1e4e020b5d48699a37781f41c9da1bd.setIcon(icon_37f5add5b7667e760e91798131593a96);
+        
+    
+        var popup_bdedcb7211e2eb8518f659f8b7e85906 = L.popup({"maxWidth": 200});
+
+        
+            var html_7233b3781bb8362665032140e1ac63bd = $(`<div id="html_7233b3781bb8362665032140e1ac63bd" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100663</p><p><b>Travel cost:</b> 1189.35</p><p><b>Heuristic cost:</b> 23274.97</p></div>`)[0];
+            popup_bdedcb7211e2eb8518f659f8b7e85906.setContent(html_7233b3781bb8362665032140e1ac63bd);
+        
+
+        marker_a1e4e020b5d48699a37781f41c9da1bd.bindPopup(popup_bdedcb7211e2eb8518f659f8b7e85906)
+        ;
+
+        
+    
+    
+            var marker_fdb519511015f46ef34b8e54bb6ac6ab = L.marker(
+                [40.70234593, -84.03240226],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a0c59aeb183c44c35efcba77675a6f2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdb519511015f46ef34b8e54bb6ac6ab.setIcon(icon_a0c59aeb183c44c35efcba77675a6f2b);
+        
+    
+        var popup_5ef1061eff08c44cf374f0d974f2ba92 = L.popup({"maxWidth": 200});
+
+        
+            var html_2d16fb0bf8679e1fed57b63b64404602 = $(`<div id="html_2d16fb0bf8679e1fed57b63b64404602" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100664</p><p><b>Travel cost:</b> 1246.11</p><p><b>Heuristic cost:</b> 23000.00</p></div>`)[0];
+            popup_5ef1061eff08c44cf374f0d974f2ba92.setContent(html_2d16fb0bf8679e1fed57b63b64404602);
+        
+
+        marker_fdb519511015f46ef34b8e54bb6ac6ab.bindPopup(popup_5ef1061eff08c44cf374f0d974f2ba92)
+        ;
+
+        
+    
+    
+            var marker_8000c3a554c2bea33d66120aaf2f64df = L.marker(
+                [40.70232483, -84.05152731],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_e5b41aeccfe5ada0a10bacb142b0331b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8000c3a554c2bea33d66120aaf2f64df.setIcon(icon_e5b41aeccfe5ada0a10bacb142b0331b);
+        
+    
+        var popup_dccecb7ad4c265c137c26fdc72077bc4 = L.popup({"maxWidth": 200});
+
+        
+            var html_b0cbba47db7aa6fe0b118692bcb42276 = $(`<div id="html_b0cbba47db7aa6fe0b118692bcb42276" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100643</p><p><b>Travel cost:</b> 1447.88</p><p><b>Heuristic cost:</b> 21927.86</p></div>`)[0];
+            popup_dccecb7ad4c265c137c26fdc72077bc4.setContent(html_b0cbba47db7aa6fe0b118692bcb42276);
+        
+
+        marker_8000c3a554c2bea33d66120aaf2f64df.bindPopup(popup_dccecb7ad4c265c137c26fdc72077bc4)
+        ;
+
+        
+    
+    
+            var marker_ed50dafd5824dd3c7668ed2fc7d7da65 = L.marker(
+                [40.71695485, -84.05162635],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_3062a0cc8d67f5d48ba6c619ef2fbcb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed50dafd5824dd3c7668ed2fc7d7da65.setIcon(icon_3062a0cc8d67f5d48ba6c619ef2fbcb5);
+        
+    
+        var popup_1a6c78a8696839286f7e9dba74d38c30 = L.popup({"maxWidth": 200});
+
+        
+            var html_12db607c87de3dc376a0390727f44bd8 = $(`<div id="html_12db607c87de3dc376a0390727f44bd8" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100649</p><p><b>Travel cost:</b> 1612.39</p><p><b>Heuristic cost:</b> 20703.64</p></div>`)[0];
+            popup_1a6c78a8696839286f7e9dba74d38c30.setContent(html_12db607c87de3dc376a0390727f44bd8);
+        
+
+        marker_ed50dafd5824dd3c7668ed2fc7d7da65.bindPopup(popup_1a6c78a8696839286f7e9dba74d38c30)
+        ;
+
+        
+    
+    
+            var marker_d02796f0a220aff0cc0d2bbbdb5dc5a3 = L.marker(
+                [40.71686421, -84.06751589],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_3ead42cd74be6e636d29a13855dc6898 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d02796f0a220aff0cc0d2bbbdb5dc5a3.setIcon(icon_3ead42cd74be6e636d29a13855dc6898);
+        
+    
+        var popup_8ef55c8e4bf0b3dfb920dbf8c2daa5d5 = L.popup({"maxWidth": 200});
+
+        
+            var html_bdfbbe497d208a69a2ffe7bb82448d14 = $(`<div id="html_bdfbbe497d208a69a2ffe7bb82448d14" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100648</p><p><b>Travel cost:</b> 1749.69</p><p><b>Heuristic cost:</b> 19817.42</p></div>`)[0];
+            popup_8ef55c8e4bf0b3dfb920dbf8c2daa5d5.setContent(html_bdfbbe497d208a69a2ffe7bb82448d14);
+        
+
+        marker_d02796f0a220aff0cc0d2bbbdb5dc5a3.bindPopup(popup_8ef55c8e4bf0b3dfb920dbf8c2daa5d5)
+        ;
+
+        
+    
+    
+            var marker_9302ca7e252ac34ff2ca5b350f86a4b3 = L.marker(
+                [40.71685979, -84.07080741],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_4a5d085536ea4277cf7adcc1f872d2bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9302ca7e252ac34ff2ca5b350f86a4b3.setIcon(icon_4a5d085536ea4277cf7adcc1f872d2bc);
+        
+    
+        var popup_8db832ef74f520565068bdc5666d65e3 = L.popup({"maxWidth": 200});
+
+        
+            var html_e93cc4b74e6353ca73ac5e84612939c9 = $(`<div id="html_e93cc4b74e6353ca73ac5e84612939c9" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100647</p><p><b>Travel cost:</b> 1773.63</p><p><b>Heuristic cost:</b> 19638.70</p></div>`)[0];
+            popup_8db832ef74f520565068bdc5666d65e3.setContent(html_e93cc4b74e6353ca73ac5e84612939c9);
+        
+
+        marker_9302ca7e252ac34ff2ca5b350f86a4b3.bindPopup(popup_8db832ef74f520565068bdc5666d65e3)
+        ;
+
+        
+    
+    
+            var marker_29ea5000b887dfe55f2cdb8ed0a4a324 = L.marker(
+                [40.72707594, -84.07078844],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_fa3a5b73e9a83fdf9bb26b3c7c50b201 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29ea5000b887dfe55f2cdb8ed0a4a324.setIcon(icon_fa3a5b73e9a83fdf9bb26b3c7c50b201);
+        
+    
+        var popup_629e9a51ef407d041861c8c818b99827 = L.popup({"maxWidth": 200});
+
+        
+            var html_3fdc5df7be106271f652e513c59456e4 = $(`<div id="html_3fdc5df7be106271f652e513c59456e4" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100645</p><p><b>Travel cost:</b> 1852.41</p><p><b>Heuristic cost:</b> 18779.07</p></div>`)[0];
+            popup_629e9a51ef407d041861c8c818b99827.setContent(html_3fdc5df7be106271f652e513c59456e4);
+        
+
+        marker_29ea5000b887dfe55f2cdb8ed0a4a324.bindPopup(popup_629e9a51ef407d041861c8c818b99827)
+        ;
+
+        
+    
+    
+            var marker_d6a908a51a3142257f6a226a02dc7367 = L.marker(
+                [40.72615742, -84.07231277],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_01b0632343f626d508ffdf418a6665c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d6a908a51a3142257f6a226a02dc7367.setIcon(icon_01b0632343f626d508ffdf418a6665c7);
+        
+    
+        var popup_c052173762eec3c477e0d1a0cc9f6219 = L.popup({"maxWidth": 200});
+
+        
+            var html_57f1e9553aade7eedec8c7ff54fcd878 = $(`<div id="html_57f1e9553aade7eedec8c7ff54fcd878" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 67</p><p><b>Travel cost:</b> 1870.90</p><p><b>Heuristic cost:</b> 18769.55</p></div>`)[0];
+            popup_c052173762eec3c477e0d1a0cc9f6219.setContent(html_57f1e9553aade7eedec8c7ff54fcd878);
+        
+
+        marker_d6a908a51a3142257f6a226a02dc7367.bindPopup(popup_c052173762eec3c477e0d1a0cc9f6219)
+        ;
+
+        
+    
+    
+            var marker_29016afff47f783a5c73b8eb900d3e22 = L.marker(
+                [40.72785286, -84.07064347],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_5b052ee6bc469230ad94930832ae512f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29016afff47f783a5c73b8eb900d3e22.setIcon(icon_5b052ee6bc469230ad94930832ae512f);
+        
+    
+        var popup_459d9c6aa514aa64a51712d91d9732e4 = L.popup({"maxWidth": 200});
+
+        
+            var html_924ea49d8808e32b04f164cb53035244 = $(`<div id="html_924ea49d8808e32b04f164cb53035244" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100199</p><p><b>Travel cost:</b> 1901.37</p><p><b>Heuristic cost:</b> 18723.14</p></div>`)[0];
+            popup_459d9c6aa514aa64a51712d91d9732e4.setContent(html_924ea49d8808e32b04f164cb53035244);
+        
+
+        marker_29016afff47f783a5c73b8eb900d3e22.bindPopup(popup_459d9c6aa514aa64a51712d91d9732e4)
+        ;
+
+        
+    
+    
+            var marker_e6e6db0f76304b1aac17f7934b9620c7 = L.marker(
+                [40.72822485, -84.07026044],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_82ffd7316430c418632a9f94ee758c6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6e6db0f76304b1aac17f7934b9620c7.setIcon(icon_82ffd7316430c418632a9f94ee758c6c);
+        
+    
+        var popup_9da7515b917b0a7224413d64ae5e4bce = L.popup({"maxWidth": 200});
+
+        
+            var html_8124b539781614ebbd6a96cf2dabb39a = $(`<div id="html_8124b539781614ebbd6a96cf2dabb39a" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100127</p><p><b>Travel cost:</b> 1907.08</p><p><b>Heuristic cost:</b> 18714.29</p></div>`)[0];
+            popup_9da7515b917b0a7224413d64ae5e4bce.setContent(html_8124b539781614ebbd6a96cf2dabb39a);
+        
+
+        marker_e6e6db0f76304b1aac17f7934b9620c7.bindPopup(popup_9da7515b917b0a7224413d64ae5e4bce)
+        ;
+
+        
+    
+    
+            var marker_04716e265cd5f52c8b6bcfa3bce33223 = L.marker(
+                [40.73061723, -84.07097629],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_c4d9ddb650f5efa6fe96a787823e022c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04716e265cd5f52c8b6bcfa3bce33223.setIcon(icon_c4d9ddb650f5efa6fe96a787823e022c);
+        
+    
+        var popup_1b53548d720bf51227078a10e0f6089f = L.popup({"maxWidth": 200});
+
+        
+            var html_d9910569c3503e9974cfb2584ee9495b = $(`<div id="html_d9910569c3503e9974cfb2584ee9495b" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100113</p><p><b>Travel cost:</b> 1931.92</p><p><b>Heuristic cost:</b> 18477.38</p></div>`)[0];
+            popup_1b53548d720bf51227078a10e0f6089f.setContent(html_d9910569c3503e9974cfb2584ee9495b);
+        
+
+        marker_04716e265cd5f52c8b6bcfa3bce33223.bindPopup(popup_1b53548d720bf51227078a10e0f6089f)
+        ;
+
+        
+    
+    
+            var marker_c382c86a9803f2dcd141bde725c887e7 = L.marker(
+                [40.73067281, -84.07331946],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_245205310e963bbd4b10259b292559ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c382c86a9803f2dcd141bde725c887e7.setIcon(icon_245205310e963bbd4b10259b292559ba);
+        
+    
+        var popup_dbf95d6a3f532ff53045f27f8bbd1c89 = L.popup({"maxWidth": 200});
+
+        
+            var html_9d92a7a2cedb0fe3574b3d48b5380b3d = $(`<div id="html_9d92a7a2cedb0fe3574b3d48b5380b3d" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100307</p><p><b>Travel cost:</b> 1949.06</p><p><b>Heuristic cost:</b> 18338.84</p></div>`)[0];
+            popup_dbf95d6a3f532ff53045f27f8bbd1c89.setContent(html_9d92a7a2cedb0fe3574b3d48b5380b3d);
+        
+
+        marker_c382c86a9803f2dcd141bde725c887e7.bindPopup(popup_dbf95d6a3f532ff53045f27f8bbd1c89)
+        ;
+
+        
+    
+    
+            var marker_1a59eda142994653866614d088dc2cb6 = L.marker(
+                [40.73065793, -84.07441646],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_e3177cdbc2e0bd2fbae3ea0ed43f688d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a59eda142994653866614d088dc2cb6.setIcon(icon_e3177cdbc2e0bd2fbae3ea0ed43f688d);
+        
+    
+        var popup_0b27e737d6209998f23f62aebbd2e7ed = L.popup({"maxWidth": 200});
+
+        
+            var html_8138a01ff04765a3b084eec2c790a5e5 = $(`<div id="html_8138a01ff04765a3b084eec2c790a5e5" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100112</p><p><b>Travel cost:</b> 1956.49</p><p><b>Heuristic cost:</b> 18277.71</p></div>`)[0];
+            popup_0b27e737d6209998f23f62aebbd2e7ed.setContent(html_8138a01ff04765a3b084eec2c790a5e5);
+        
+
+        marker_1a59eda142994653866614d088dc2cb6.bindPopup(popup_0b27e737d6209998f23f62aebbd2e7ed)
+        ;
+
+        
+    
+    
+            var marker_d00ed724576f73549031978d2ca6ef24 = L.marker(
+                [40.73542689, -84.07544148],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_ccece63862f26e8d32b167decc2595ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d00ed724576f73549031978d2ca6ef24.setIcon(icon_ccece63862f26e8d32b167decc2595ff);
+        
+    
+        var popup_490ad51c47faa67a52a13e6efb8874e6 = L.popup({"maxWidth": 200});
+
+        
+            var html_9bb749c28e99164778e4b870ce4d50fd = $(`<div id="html_9bb749c28e99164778e4b870ce4d50fd" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 102521</p><p><b>Travel cost:</b> 2000.79</p><p><b>Heuristic cost:</b> 17828.82</p></div>`)[0];
+            popup_490ad51c47faa67a52a13e6efb8874e6.setContent(html_9bb749c28e99164778e4b870ce4d50fd);
+        
+
+        marker_d00ed724576f73549031978d2ca6ef24.bindPopup(popup_490ad51c47faa67a52a13e6efb8874e6)
+        ;
+
+        
+    
+    
+            var marker_c6c989f0e658222b11595a653df12ce6 = L.marker(
+                [40.75288388, -84.07544151],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_db8e1cc670f596b78094f7b191d80cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c6c989f0e658222b11595a653df12ce6.setIcon(icon_db8e1cc670f596b78094f7b191d80cb2);
+        
+    
+        var popup_d13874b6cae918c8d8c0623010874da6 = L.popup({"maxWidth": 200});
+
+        
+            var html_f9fc2ef07789dd8ad0e99d7e3cfe81f0 = $(`<div id="html_f9fc2ef07789dd8ad0e99d7e3cfe81f0" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 102519</p><p><b>Travel cost:</b> 2111.34</p><p><b>Heuristic cost:</b> 16469.13</p></div>`)[0];
+            popup_d13874b6cae918c8d8c0623010874da6.setContent(html_f9fc2ef07789dd8ad0e99d7e3cfe81f0);
+        
+
+        marker_c6c989f0e658222b11595a653df12ce6.bindPopup(popup_d13874b6cae918c8d8c0623010874da6)
+        ;
+
+        
+    
+    
+            var marker_a5dab543d043107ed1320b2394d427aa = L.marker(
+                [40.75562987, -84.0754495],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a7fb01b78b764cf53ccad5937f201247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5dab543d043107ed1320b2394d427aa.setIcon(icon_a7fb01b78b764cf53ccad5937f201247);
+        
+    
+        var popup_f4eb578310a948e8bb6de2654058c7aa = L.popup({"maxWidth": 200});
+
+        
+            var html_a1c2e63f789259f4f89073b09da94ec3 = $(`<div id="html_a1c2e63f789259f4f89073b09da94ec3" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 102517</p><p><b>Travel cost:</b> 2126.65</p><p><b>Heuristic cost:</b> 16266.11</p></div>`)[0];
+            popup_f4eb578310a948e8bb6de2654058c7aa.setContent(html_a1c2e63f789259f4f89073b09da94ec3);
+        
+
+        marker_a5dab543d043107ed1320b2394d427aa.bindPopup(popup_f4eb578310a948e8bb6de2654058c7aa)
+        ;
+
+        
+    
+    
+            var marker_b7e97e2d6f85b575c73b89449163b6ed = L.marker(
+                [40.75605187, -84.07343149],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_cdc657b20cb3e34bf03c0dd84e5cfc86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7e97e2d6f85b575c73b89449163b6ed.setIcon(icon_cdc657b20cb3e34bf03c0dd84e5cfc86);
+        
+    
+        var popup_ba6ab42a05bbe8d2eecee84267a44934 = L.popup({"maxWidth": 200});
+
+        
+            var html_8ba1f365aacf7202fe77507c623b9c71 = $(`<div id="html_8ba1f365aacf7202fe77507c623b9c71" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101958</p><p><b>Travel cost:</b> 2136.40</p><p><b>Heuristic cost:</b> 16363.61</p></div>`)[0];
+            popup_ba6ab42a05bbe8d2eecee84267a44934.setContent(html_8ba1f365aacf7202fe77507c623b9c71);
+        
+
+        marker_b7e97e2d6f85b575c73b89449163b6ed.bindPopup(popup_ba6ab42a05bbe8d2eecee84267a44934)
+        ;
+
+        
+    
+    
+            var marker_c1e761e609248ba178fc483d9be363bb = L.marker(
+                [40.75565187, -84.0764985],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_aa548df1de3543a7a8dd8339710ba5c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1e761e609248ba178fc483d9be363bb.setIcon(icon_aa548df1de3543a7a8dd8339710ba5c4);
+        
+    
+        var popup_c9b4888f5258dbc450d48eb066ba0bc1 = L.popup({"maxWidth": 200});
+
+        
+            var html_1f72e2046993d7770fb591f225d3cc1e = $(`<div id="html_1f72e2046993d7770fb591f225d3cc1e" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101959</p><p><b>Travel cost:</b> 2180.27</p><p><b>Heuristic cost:</b> 16198.21</p></div>`)[0];
+            popup_c9b4888f5258dbc450d48eb066ba0bc1.setContent(html_1f72e2046993d7770fb591f225d3cc1e);
+        
+
+        marker_c1e761e609248ba178fc483d9be363bb.bindPopup(popup_c9b4888f5258dbc450d48eb066ba0bc1)
+        ;
+
+        
+    
+    
+            var marker_16faff477e975f080e5fb9360ee43d18 = L.marker(
+                [40.75518597, -84.07936228],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_ba95a9bd06b51171784241b22c829d40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16faff477e975f080e5fb9360ee43d18.setIcon(icon_ba95a9bd06b51171784241b22c829d40);
+        
+    
+        var popup_03f49f7c797a448071525f243ffc7d45 = L.popup({"maxWidth": 200});
+
+        
+            var html_a13dd79e8d29e4d30abd5714995b4a2b = $(`<div id="html_a13dd79e8d29e4d30abd5714995b4a2b" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101953</p><p><b>Travel cost:</b> 2221.23</p><p><b>Heuristic cost:</b> 16052.87</p></div>`)[0];
+            popup_03f49f7c797a448071525f243ffc7d45.setContent(html_a13dd79e8d29e4d30abd5714995b4a2b);
+        
+
+        marker_16faff477e975f080e5fb9360ee43d18.bindPopup(popup_03f49f7c797a448071525f243ffc7d45)
+        ;
+
+        
+    
+    
+            var marker_32de843fc2d54ed458a8b3df6542fb44 = L.marker(
+                [40.75509487, -84.07989551],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_3f243cb35df419da173fc2ac6ac3515b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32de843fc2d54ed458a8b3df6542fb44.setIcon(icon_3f243cb35df419da173fc2ac6ac3515b);
+        
+    
+        var popup_3456c01560f1167de77d29a380876a38 = L.popup({"maxWidth": 200});
+
+        
+            var html_8a80d1313371eab9d20903093c10fa3f = $(`<div id="html_8a80d1313371eab9d20903093c10fa3f" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100219</p><p><b>Travel cost:</b> 2225.08</p><p><b>Heuristic cost:</b> 16026.39</p></div>`)[0];
+            popup_3456c01560f1167de77d29a380876a38.setContent(html_8a80d1313371eab9d20903093c10fa3f);
+        
+
+        marker_32de843fc2d54ed458a8b3df6542fb44.bindPopup(popup_3456c01560f1167de77d29a380876a38)
+        ;
+
+        
+    
+    
+            var marker_4f12d1b480200762f785dc8049efbd04 = L.marker(
+                [40.75392787, -84.08572654],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_62a3fd3fa0fca5ab701313f5a1e8986a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f12d1b480200762f785dc8049efbd04.setIcon(icon_62a3fd3fa0fca5ab701313f5a1e8986a);
+        
+    
+        var popup_96a287f12a6d444157ffb5698821f2ff = L.popup({"maxWidth": 200});
+
+        
+            var html_eca69b46c5a42152b81e87b5277bdd32 = $(`<div id="html_eca69b46c5a42152b81e87b5277bdd32" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101962</p><p><b>Travel cost:</b> 2268.65</p><p><b>Heuristic cost:</b> 15755.67</p></div>`)[0];
+            popup_96a287f12a6d444157ffb5698821f2ff.setContent(html_eca69b46c5a42152b81e87b5277bdd32);
+        
+
+        marker_4f12d1b480200762f785dc8049efbd04.bindPopup(popup_96a287f12a6d444157ffb5698821f2ff)
+        ;
+
+        
+    
+    
+            var marker_10199a40ff66a3899bd0f66c4cfd09ee = L.marker(
+                [40.75334387, -84.08952556],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_bbcc7190d3ef76d0fb47b42d1fb67ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10199a40ff66a3899bd0f66c4cfd09ee.setIcon(icon_bbcc7190d3ef76d0fb47b42d1fb67ac1);
+        
+    
+        var popup_4d8a884a74db2d139838a58414904336 = L.popup({"maxWidth": 200});
+
+        
+            var html_fdf2c7030abdbdd6fd8a5d4aedec6996 = $(`<div id="html_fdf2c7030abdbdd6fd8a5d4aedec6996" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101963</p><p><b>Travel cost:</b> 2296.40</p><p><b>Heuristic cost:</b> 15571.64</p></div>`)[0];
+            popup_4d8a884a74db2d139838a58414904336.setContent(html_fdf2c7030abdbdd6fd8a5d4aedec6996);
+        
+
+        marker_10199a40ff66a3899bd0f66c4cfd09ee.bindPopup(popup_4d8a884a74db2d139838a58414904336)
+        ;
+
+        
+    
+    
+            var marker_316b02de8326e268602e019d0f6796dd = L.marker(
+                [40.75586386, -84.08954354],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_3fde7a65f697ef0ec166c08b80a60c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_316b02de8326e268602e019d0f6796dd.setIcon(icon_3fde7a65f697ef0ec166c08b80a60c56);
+        
+    
+        var popup_8da65f5c5cebf08f06eebd851654290d = L.popup({"maxWidth": 200});
+
+        
+            var html_44122ae8f63520e44e73579b2a6983b5 = $(`<div id="html_44122ae8f63520e44e73579b2a6983b5" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101951</p><p><b>Travel cost:</b> 2316.70</p><p><b>Heuristic cost:</b> 15374.72</p></div>`)[0];
+            popup_8da65f5c5cebf08f06eebd851654290d.setContent(html_44122ae8f63520e44e73579b2a6983b5);
+        
+
+        marker_316b02de8326e268602e019d0f6796dd.bindPopup(popup_8da65f5c5cebf08f06eebd851654290d)
+        ;
+
+        
+    
+    
+            var marker_9f859d5c67a714122cc0b34ef63759af = L.marker(
+                [40.76126182, -84.08953552],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_5e24f277633ff5e654b69e19f0c1fd43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f859d5c67a714122cc0b34ef63759af.setIcon(icon_5e24f277633ff5e654b69e19f0c1fd43);
+        
+    
+        var popup_b68c5690c4d3af11f02da9ea1c969bdf = L.popup({"maxWidth": 200});
+
+        
+            var html_91577ead669586596973fd02a6d4998a = $(`<div id="html_91577ead669586596973fd02a6d4998a" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101950</p><p><b>Travel cost:</b> 2369.09</p><p><b>Heuristic cost:</b> 14965.28</p></div>`)[0];
+            popup_b68c5690c4d3af11f02da9ea1c969bdf.setContent(html_91577ead669586596973fd02a6d4998a);
+        
+
+        marker_9f859d5c67a714122cc0b34ef63759af.bindPopup(popup_b68c5690c4d3af11f02da9ea1c969bdf)
+        ;
+
+        
+    
+    
+            var marker_d1002215e9472f7bdbe6f3d04c450c5a = L.marker(
+                [40.76337781, -84.08956051],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_72f2a3f31b5e6cffe1378dc0e460f2e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1002215e9472f7bdbe6f3d04c450c5a.setIcon(icon_72f2a3f31b5e6cffe1378dc0e460f2e3);
+        
+    
+        var popup_9c5184938a02b5f0711d23aa3ebb3147 = L.popup({"maxWidth": 200});
+
+        
+            var html_14063a9203c4c71b6b8ee78d0c8ba82b = $(`<div id="html_14063a9203c4c71b6b8ee78d0c8ba82b" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101935</p><p><b>Travel cost:</b> 2389.27</p><p><b>Heuristic cost:</b> 14806.75</p></div>`)[0];
+            popup_9c5184938a02b5f0711d23aa3ebb3147.setContent(html_14063a9203c4c71b6b8ee78d0c8ba82b);
+        
+
+        marker_d1002215e9472f7bdbe6f3d04c450c5a.bindPopup(popup_9c5184938a02b5f0711d23aa3ebb3147)
+        ;
+
+        
+    
+    
+            var marker_5e146a0856d2b29620408bb4d9367c43 = L.marker(
+                [40.77381876, -84.08968446],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_b459e2eae1b966dbebd0ccd328d299fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e146a0856d2b29620408bb4d9367c43.setIcon(icon_b459e2eae1b966dbebd0ccd328d299fd);
+        
+    
+        var popup_4c4d8c1013ffa55cdf504139bd2ba4a7 = L.popup({"maxWidth": 200});
+
+        
+            var html_6c8a3f36435c94017d62bc0bda85bcf0 = $(`<div id="html_6c8a3f36435c94017d62bc0bda85bcf0" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101933</p><p><b>Travel cost:</b> 2486.18</p><p><b>Heuristic cost:</b> 14057.74</p></div>`)[0];
+            popup_4c4d8c1013ffa55cdf504139bd2ba4a7.setContent(html_6c8a3f36435c94017d62bc0bda85bcf0);
+        
+
+        marker_5e146a0856d2b29620408bb4d9367c43.bindPopup(popup_4c4d8c1013ffa55cdf504139bd2ba4a7)
+        ;
+
+        
+    
+    
+            var marker_eb74ef61a0bf84206f439c481a6b4aef = L.marker(
+                [40.76896277, -84.10695654],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_19ef67cda47630913c4e9bdf77cecc1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb74ef61a0bf84206f439c481a6b4aef.setIcon(icon_19ef67cda47630913c4e9bdf77cecc1f);
+        
+    
+        var popup_e0ab474681679ed957bcbd817e69e5e4 = L.popup({"maxWidth": 200});
+
+        
+            var html_fa46bf62e3563b7240bf1445da0549a2 = $(`<div id="html_fa46bf62e3563b7240bf1445da0549a2" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101932</p><p><b>Travel cost:</b> 2672.15</p><p><b>Heuristic cost:</b> 13308.50</p></div>`)[0];
+            popup_e0ab474681679ed957bcbd817e69e5e4.setContent(html_fa46bf62e3563b7240bf1445da0549a2);
+        
+
+        marker_eb74ef61a0bf84206f439c481a6b4aef.bindPopup(popup_e0ab474681679ed957bcbd817e69e5e4)
+        ;
+
+        
+    
+    
+            var marker_b307b6d3d844c37a53d1a6db136eadc4 = L.marker(
+                [40.76894577, -84.10875155],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_1dfe5b732624b9db09d3327665300549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b307b6d3d844c37a53d1a6db136eadc4.setIcon(icon_1dfe5b732624b9db09d3327665300549);
+        
+    
+        var popup_2e7546b7bccaf9f278dc3234b3deb56d = L.popup({"maxWidth": 200});
+
+        
+            var html_a4d95306714542dea997790bbbac268f = $(`<div id="html_a4d95306714542dea997790bbbac268f" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101931</p><p><b>Travel cost:</b> 2686.61</p><p><b>Heuristic cost:</b> 13200.68</p></div>`)[0];
+            popup_2e7546b7bccaf9f278dc3234b3deb56d.setContent(html_a4d95306714542dea997790bbbac268f);
+        
+
+        marker_b307b6d3d844c37a53d1a6db136eadc4.bindPopup(popup_2e7546b7bccaf9f278dc3234b3deb56d)
+        ;
+
+        
+    
+    
+            var marker_b8b7eb00ea5b23c6395c395211396dcf = L.marker(
+                [40.77002377, -84.10875854],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_d230b8364c18ca788b86ac612020994c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8b7eb00ea5b23c6395c395211396dcf.setIcon(icon_d230b8364c18ca788b86ac612020994c);
+        
+    
+        var popup_4c35e96754e8bb9058e9a02cb85c1639 = L.popup({"maxWidth": 200});
+
+        
+            var html_77e87b5216b129de75eabadf6f72ed64 = $(`<div id="html_77e87b5216b129de75eabadf6f72ed64" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101930</p><p><b>Travel cost:</b> 2695.32</p><p><b>Heuristic cost:</b> 13117.29</p></div>`)[0];
+            popup_4c35e96754e8bb9058e9a02cb85c1639.setContent(html_77e87b5216b129de75eabadf6f72ed64);
+        
+
+        marker_b8b7eb00ea5b23c6395c395211396dcf.bindPopup(popup_4c35e96754e8bb9058e9a02cb85c1639)
+        ;
+
+        
+    
+    
+            var marker_d01f2aab758786c67eaffcf54f03e048 = L.marker(
+                [40.76993276, -84.11180455],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_6f592d54b5afc9fc27001a296ed6f8a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d01f2aab758786c67eaffcf54f03e048.setIcon(icon_6f592d54b5afc9fc27001a296ed6f8a9);
+        
+    
+        var popup_88560f4b155a5650e9d5444c2a627a4f = L.popup({"maxWidth": 200});
+
+        
+            var html_20a46307b08aa6f90d425dd99baf68c8 = $(`<div id="html_20a46307b08aa6f90d425dd99baf68c8" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100268</p><p><b>Travel cost:</b> 2718.58</p><p><b>Heuristic cost:</b> 12939.85</p></div>`)[0];
+            popup_88560f4b155a5650e9d5444c2a627a4f.setContent(html_20a46307b08aa6f90d425dd99baf68c8);
+        
+
+        marker_d01f2aab758786c67eaffcf54f03e048.bindPopup(popup_88560f4b155a5650e9d5444c2a627a4f)
+        ;
+
+        
+    
+    
+            var marker_8ab06c8f5631e0ca1327762c57677ae1 = L.marker(
+                [40.78124827, -84.11568121],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_db6a0f09bb993db594ea5177632d655a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ab06c8f5631e0ca1327762c57677ae1.setIcon(icon_db6a0f09bb993db594ea5177632d655a);
+        
+    
+        var popup_1d2eba1684c9c077453a0c42275d4fee = L.popup({"maxWidth": 200});
+
+        
+            var html_c3ed5f3897716aafcd1f2837b2a94f9f = $(`<div id="html_c3ed5f3897716aafcd1f2837b2a94f9f" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 29</p><p><b>Travel cost:</b> 2899.78</p><p><b>Heuristic cost:</b> 11846.86</p></div>`)[0];
+            popup_1d2eba1684c9c077453a0c42275d4fee.setContent(html_c3ed5f3897716aafcd1f2837b2a94f9f);
+        
+
+        marker_8ab06c8f5631e0ca1327762c57677ae1.bindPopup(popup_1d2eba1684c9c077453a0c42275d4fee)
+        ;
+
+        
+    
+    
+            var marker_784e7ba05724c9972de5820c0a0da6cf = L.marker(
+                [40.78795344, -84.11827642],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_ad139763279deb86397b7f2614c305b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_784e7ba05724c9972de5820c0a0da6cf.setIcon(icon_ad139763279deb86397b7f2614c305b9);
+        
+    
+        var popup_0caa24ea977d731340a656b96552e9b1 = L.popup({"maxWidth": 200});
+
+        
+            var html_6afba067ed39ead557e12a7bd39f4d00 = $(`<div id="html_6afba067ed39ead557e12a7bd39f4d00" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101906</p><p><b>Travel cost:</b> 3011.07</p><p><b>Heuristic cost:</b> 11202.40</p></div>`)[0];
+            popup_0caa24ea977d731340a656b96552e9b1.setContent(html_6afba067ed39ead557e12a7bd39f4d00);
+        
+
+        marker_784e7ba05724c9972de5820c0a0da6cf.bindPopup(popup_0caa24ea977d731340a656b96552e9b1)
+        ;
+
+        
+    
+    
+            var marker_42186f1c8e9b28d918ce64682f5371c7 = L.marker(
+                [40.78745366, -84.12813852],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_2ed6c185c4d427fde945bec1267c24d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42186f1c8e9b28d918ce64682f5371c7.setIcon(icon_2ed6c185c4d427fde945bec1267c24d2);
+        
+    
+        var popup_10740ece8799cbf7c742779cdaa2df9a = L.popup({"maxWidth": 200});
+
+        
+            var html_b410c5a1f3f1f81986d1ce56de3a9181 = $(`<div id="html_b410c5a1f3f1f81986d1ce56de3a9181" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101905</p><p><b>Travel cost:</b> 3110.98</p><p><b>Heuristic cost:</b> 10605.33</p></div>`)[0];
+            popup_10740ece8799cbf7c742779cdaa2df9a.setContent(html_b410c5a1f3f1f81986d1ce56de3a9181);
+        
+
+        marker_42186f1c8e9b28d918ce64682f5371c7.bindPopup(popup_10740ece8799cbf7c742779cdaa2df9a)
+        ;
+
+        
+    
+    
+            var marker_6a81b54c227f219bd5143bd5f5c3e17d = L.marker(
+                [40.78999868, -84.1282467],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_de340610119b8f33928d616006245af7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a81b54c227f219bd5143bd5f5c3e17d.setIcon(icon_de340610119b8f33928d616006245af7);
+        
+    
+        var popup_766150407bc02a1202696e6243642f53 = L.popup({"maxWidth": 200});
+
+        
+            var html_62ddbca8d09921eaef02c0c3d51fbdc0 = $(`<div id="html_62ddbca8d09921eaef02c0c3d51fbdc0" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101909</p><p><b>Travel cost:</b> 3130.56</p><p><b>Heuristic cost:</b> 10412.59</p></div>`)[0];
+            popup_766150407bc02a1202696e6243642f53.setContent(html_62ddbca8d09921eaef02c0c3d51fbdc0);
+        
+
+        marker_6a81b54c227f219bd5143bd5f5c3e17d.bindPopup(popup_766150407bc02a1202696e6243642f53)
+        ;
+
+        
+    
+    
+            var marker_9a9c09e0667f8d86b9d5d8307f6d3294 = L.marker(
+                [40.80200859, -84.12846045],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_7e77895f34e33d519f0d6fe4c55f2668 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a9c09e0667f8d86b9d5d8307f6d3294.setIcon(icon_7e77895f34e33d519f0d6fe4c55f2668);
+        
+    
+        var popup_f1c909185e70933cdaa0f5eb881fb31e = L.popup({"maxWidth": 200});
+
+        
+            var html_6326d3371547bfd52fe5de823038c68c = $(`<div id="html_6326d3371547bfd52fe5de823038c68c" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101907</p><p><b>Travel cost:</b> 3236.28</p><p><b>Heuristic cost:</b> 9587.80</p></div>`)[0];
+            popup_f1c909185e70933cdaa0f5eb881fb31e.setContent(html_6326d3371547bfd52fe5de823038c68c);
+        
+
+        marker_9a9c09e0667f8d86b9d5d8307f6d3294.bindPopup(popup_f1c909185e70933cdaa0f5eb881fb31e)
+        ;
+
+        
+    
+    
+            var marker_1a29fbc56d44991fc25d87f7353003ed = L.marker(
+                [40.8018121, -84.14195271],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_8f1de92cde952c817cd6748f11074566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a29fbc56d44991fc25d87f7353003ed.setIcon(icon_8f1de92cde952c817cd6748f11074566);
+        
+    
+        var popup_7a3fbfae20af606922e925e9e3f51c87 = L.popup({"maxWidth": 200});
+
+        
+            var html_b222fed5dd8997c919de0fecaeb76c4b = $(`<div id="html_b222fed5dd8997c919de0fecaeb76c4b" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 31</p><p><b>Travel cost:</b> 3396.72</p><p><b>Heuristic cost:</b> 8690.01</p></div>`)[0];
+            popup_7a3fbfae20af606922e925e9e3f51c87.setContent(html_b222fed5dd8997c919de0fecaeb76c4b);
+        
+
+        marker_1a29fbc56d44991fc25d87f7353003ed.bindPopup(popup_7a3fbfae20af606922e925e9e3f51c87)
+        ;
+
+        
+    
+    
+            var marker_c67db26dea7548191ce22fa93fb3be9b = L.marker(
+                [40.80185758, -84.15668654],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_fc447bbf814155d7feabf415eae17ab1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c67db26dea7548191ce22fa93fb3be9b.setIcon(icon_fc447bbf814155d7feabf415eae17ab1);
+        
+    
+        var popup_e52e3d0993318b7a46a1083cfc6ba8a6 = L.popup({"maxWidth": 200});
+
+        
+            var html_8f35540fa3248ff2c78439ae6a38636c = $(`<div id="html_8f35540fa3248ff2c78439ae6a38636c" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101781</p><p><b>Travel cost:</b> 3581.76</p><p><b>Heuristic cost:</b> 7755.75</p></div>`)[0];
+            popup_e52e3d0993318b7a46a1083cfc6ba8a6.setContent(html_8f35540fa3248ff2c78439ae6a38636c);
+        
+
+        marker_c67db26dea7548191ce22fa93fb3be9b.bindPopup(popup_e52e3d0993318b7a46a1083cfc6ba8a6)
+        ;
+
+        
+    
+    
+            var marker_6c28870a020cc11c73a11ca2a464a102 = L.marker(
+                [40.81697151, -84.15682146],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_6047ff67942f8bba8f4d5b123d65bf63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c28870a020cc11c73a11ca2a464a102.setIcon(icon_6047ff67942f8bba8f4d5b123d65bf63);
+        
+    
+        var popup_6fa94c58b78e876d8c8e103af99202d8 = L.popup({"maxWidth": 200});
+
+        
+            var html_2a3c95e90aa5dccae7c248c5ebe3877a = $(`<div id="html_2a3c95e90aa5dccae7c248c5ebe3877a" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101780</p><p><b>Travel cost:</b> 3772.62</p><p><b>Heuristic cost:</b> 6692.57</p></div>`)[0];
+            popup_6fa94c58b78e876d8c8e103af99202d8.setContent(html_2a3c95e90aa5dccae7c248c5ebe3877a);
+        
+
+        marker_6c28870a020cc11c73a11ca2a464a102.bindPopup(popup_6fa94c58b78e876d8c8e103af99202d8)
+        ;
+
+        
+    
+    
+            var marker_37a580bbf3fb7dcb8418ffe323942651 = L.marker(
+                [40.8169215, -84.16646849],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a2a3f75a99a7af455d978e0b7428f64f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_37a580bbf3fb7dcb8418ffe323942651.setIcon(icon_a2a3f75a99a7af455d978e0b7428f64f);
+        
+    
+        var popup_dff899a5c414a1c6deddb965fd5cda4a = L.popup({"maxWidth": 200});
+
+        
+            var html_a2a792cf2b4ed930619ba645106d5677 = $(`<div id="html_a2a792cf2b4ed930619ba645106d5677" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101779</p><p><b>Travel cost:</b> 3834.17</p><p><b>Heuristic cost:</b> 6037.24</p></div>`)[0];
+            popup_dff899a5c414a1c6deddb965fd5cda4a.setContent(html_a2a792cf2b4ed930619ba645106d5677);
+        
+
+        marker_37a580bbf3fb7dcb8418ffe323942651.bindPopup(popup_dff899a5c414a1c6deddb965fd5cda4a)
+        ;
+
+        
+    
+    
+            var marker_ba3a1d8ecdd08f4260fa51a20273c958 = L.marker(
+                [40.8168465, -84.18057054],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_6f5ac5e0cc05d3712dee050ec0b2af48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba3a1d8ecdd08f4260fa51a20273c958.setIcon(icon_6f5ac5e0cc05d3712dee050ec0b2af48);
+        
+    
+        var popup_b8109979b8c40c5615b87f40d59be266 = L.popup({"maxWidth": 200});
+
+        
+            var html_876a8d01c172397df66cfe33cbea6d2d = $(`<div id="html_876a8d01c172397df66cfe33cbea6d2d" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 101777</p><p><b>Travel cost:</b> 3942.47</p><p><b>Heuristic cost:</b> 5153.99</p></div>`)[0];
+            popup_b8109979b8c40c5615b87f40d59be266.setContent(html_876a8d01c172397df66cfe33cbea6d2d);
+        
+
+        marker_ba3a1d8ecdd08f4260fa51a20273c958.bindPopup(popup_b8109979b8c40c5615b87f40d59be266)
+        ;
+
+        
+    
+    
+            var marker_3fead65f192bec88a2c087473a6ff629 = L.marker(
+                [40.8166935, -84.20409461],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_9e1c3f2acb5fc59fe447d95e7c41f331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fead65f192bec88a2c087473a6ff629.setIcon(icon_9e1c3f2acb5fc59fe447d95e7c41f331);
+        
+    
+        var popup_42fd92419ffd59e6f0246822740d0c43 = L.popup({"maxWidth": 200});
+
+        
+            var html_8b3f4bace3466ab42185dd6cb16bc9ca = $(`<div id="html_8b3f4bace3466ab42185dd6cb16bc9ca" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 100702</p><p><b>Travel cost:</b> 4084.86</p><p><b>Heuristic cost:</b> 4024.77</p></div>`)[0];
+            popup_42fd92419ffd59e6f0246822740d0c43.setContent(html_8b3f4bace3466ab42185dd6cb16bc9ca);
+        
+
+        marker_3fead65f192bec88a2c087473a6ff629.bindPopup(popup_42fd92419ffd59e6f0246822740d0c43)
+        ;
+
+        
+    
+    
+            var marker_3a72abb6b1d38367d7578a2062dc3f27 = L.marker(
+                [40.82441946, -84.20515757],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_b4954f1509ebd89d7ed23f8355ca92a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a72abb6b1d38367d7578a2062dc3f27.setIcon(icon_b4954f1509ebd89d7ed23f8355ca92a5);
+        
+    
+        var popup_74dd67c8968fe3cdae04bb9437f33c34 = L.popup({"maxWidth": 200});
+
+        
+            var html_37de6464e19f7e61b2c29246313d7929 = $(`<div id="html_37de6464e19f7e61b2c29246313d7929" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103941</p><p><b>Travel cost:</b> 4161.08</p><p><b>Heuristic cost:</b> 3211.22</p></div>`)[0];
+            popup_74dd67c8968fe3cdae04bb9437f33c34.setContent(html_37de6464e19f7e61b2c29246313d7929);
+        
+
+        marker_3a72abb6b1d38367d7578a2062dc3f27.bindPopup(popup_74dd67c8968fe3cdae04bb9437f33c34)
+        ;
+
+        
+    
+    
+            var marker_387223a912c58bb3d37609a6dd12adfe = L.marker(
+                [40.82504846, -84.20499557],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a9ae1153f63dac2bcaec2670830d0f30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_387223a912c58bb3d37609a6dd12adfe.setIcon(icon_a9ae1153f63dac2bcaec2670830d0f30);
+        
+    
+        var popup_748d158d8e6e724f6df440f4d548dfc8 = L.popup({"maxWidth": 200});
+
+        
+            var html_394bebdd94efb85e1902e3ec4761beea = $(`<div id="html_394bebdd94efb85e1902e3ec4761beea" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103890</p><p><b>Travel cost:</b> 4167.12</p><p><b>Heuristic cost:</b> 3157.10</p></div>`)[0];
+            popup_748d158d8e6e724f6df440f4d548dfc8.setContent(html_394bebdd94efb85e1902e3ec4761beea);
+        
+
+        marker_387223a912c58bb3d37609a6dd12adfe.bindPopup(popup_748d158d8e6e724f6df440f4d548dfc8)
+        ;
+
+        
+    
+    
+            var marker_89cf6f330f4656d7a57b71df74f5437f = L.marker(
+                [40.82647945, -84.20869557],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_3e4eee49393a2359b4a2f59781985fb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89cf6f330f4656d7a57b71df74f5437f.setIcon(icon_3e4eee49393a2359b4a2f59781985fb3);
+        
+    
+        var popup_49f908f9b4718cdc78afe6108dd3e900 = L.popup({"maxWidth": 200});
+
+        
+            var html_0dd234fc8c6996a17efb950f52918f23 = $(`<div id="html_0dd234fc8c6996a17efb950f52918f23" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103880</p><p><b>Travel cost:</b> 4199.58</p><p><b>Heuristic cost:</b> 2865.56</p></div>`)[0];
+            popup_49f908f9b4718cdc78afe6108dd3e900.setContent(html_0dd234fc8c6996a17efb950f52918f23);
+        
+
+        marker_89cf6f330f4656d7a57b71df74f5437f.bindPopup(popup_49f908f9b4718cdc78afe6108dd3e900)
+        ;
+
+        
+    
+    
+            var marker_8dc74dc1274a5d3e3cd877cfe6a24a68 = L.marker(
+                [40.83472442, -84.20520752],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_6cbeb69bd50696f13c3795604f80b4aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8dc74dc1274a5d3e3cd877cfe6a24a68.setIcon(icon_6cbeb69bd50696f13c3795604f80b4aa);
+        
+    
+        var popup_5b6c49ee133a2530d853933f36296a0f = L.popup({"maxWidth": 200});
+
+        
+            var html_c24e8378298c32a53ebc7c829fad2237 = $(`<div id="html_c24e8378298c32a53ebc7c829fad2237" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103881</p><p><b>Travel cost:</b> 4284.63</p><p><b>Heuristic cost:</b> 2281.19</p></div>`)[0];
+            popup_5b6c49ee133a2530d853933f36296a0f.setContent(html_c24e8378298c32a53ebc7c829fad2237);
+        
+
+        marker_8dc74dc1274a5d3e3cd877cfe6a24a68.bindPopup(popup_5b6c49ee133a2530d853933f36296a0f)
+        ;
+
+        
+    
+    
+            var marker_2cc6a9bc5d728d3d9597b00e2a4e7567 = L.marker(
+                [40.83496042, -84.20523652],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_7e26a8eb4fe55c59c221c86b8135d907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cc6a9bc5d728d3d9597b00e2a4e7567.setIcon(icon_7e26a8eb4fe55c59c221c86b8135d907);
+        
+    
+        var popup_5c415f926ca5afb4fdc26aa3e4055a1a = L.popup({"maxWidth": 200});
+
+        
+            var html_29eb18475b591b8e4f36578f002b77f2 = $(`<div id="html_29eb18475b591b8e4f36578f002b77f2" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103893</p><p><b>Travel cost:</b> 4286.37</p><p><b>Heuristic cost:</b> 2260.76</p></div>`)[0];
+            popup_5c415f926ca5afb4fdc26aa3e4055a1a.setContent(html_29eb18475b591b8e4f36578f002b77f2);
+        
+
+        marker_2cc6a9bc5d728d3d9597b00e2a4e7567.bindPopup(popup_5c415f926ca5afb4fdc26aa3e4055a1a)
+        ;
+
+        
+    
+    
+            var marker_d073a839287549e8050107a3d4282728 = L.marker(
+                [40.83611341, -84.22072356],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_2f961803ad3a9c6620422ee2c4347536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d073a839287549e8050107a3d4282728.setIcon(icon_2f961803ad3a9c6620422ee2c4347536);
+        
+    
+        var popup_2bce283defaf932515449c714300f6a1 = L.popup({"maxWidth": 200});
+
+        
+            var html_7680299bfd6b9a64984d269ed7e78c99 = $(`<div id="html_7680299bfd6b9a64984d269ed7e78c99" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103892</p><p><b>Travel cost:</b> 4349.46</p><p><b>Heuristic cost:</b> 1489.49</p></div>`)[0];
+            popup_2bce283defaf932515449c714300f6a1.setContent(html_7680299bfd6b9a64984d269ed7e78c99);
+        
+
+        marker_d073a839287549e8050107a3d4282728.bindPopup(popup_2bce283defaf932515449c714300f6a1)
+        ;
+
+        
+    
+    
+            var marker_e15419f88e8c46dfb9ddfa83b75c536e = L.marker(
+                [40.8378484, -84.23086258],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_7baf17bb3869689134dcc4c5884a791b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e15419f88e8c46dfb9ddfa83b75c536e.setIcon(icon_7baf17bb3869689134dcc4c5884a791b);
+        
+    
+        var popup_ed3f162bcf93eff78378ed4e8c7d0204 = L.popup({"maxWidth": 200});
+
+        
+            var html_b62ee1f50cab2e27afa7611e9c77c8bf = $(`<div id="html_b62ee1f50cab2e27afa7611e9c77c8bf" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103931</p><p><b>Travel cost:</b> 4396.05</p><p><b>Heuristic cost:</b> 1357.74</p></div>`)[0];
+            popup_ed3f162bcf93eff78378ed4e8c7d0204.setContent(html_b62ee1f50cab2e27afa7611e9c77c8bf);
+        
+
+        marker_e15419f88e8c46dfb9ddfa83b75c536e.bindPopup(popup_ed3f162bcf93eff78378ed4e8c7d0204)
+        ;
+
+        
+    
+    
+            var marker_677b0b4a96b741b6b2ab93247c78c21f = L.marker(
+                [40.8383734, -84.23103258],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_02c6dc18a968d4bb74348ad9a061f77a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_677b0b4a96b741b6b2ab93247c78c21f.setIcon(icon_02c6dc18a968d4bb74348ad9a061f77a);
+        
+    
+        var popup_1612327f5795c2bd955d02a88429f211 = L.popup({"maxWidth": 200});
+
+        
+            var html_dd6c1be53d8070babf3e719014ea72ef = $(`<div id="html_dd6c1be53d8070babf3e719014ea72ef" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103936</p><p><b>Travel cost:</b> 4400.82</p><p><b>Heuristic cost:</b> 1308.71</p></div>`)[0];
+            popup_1612327f5795c2bd955d02a88429f211.setContent(html_dd6c1be53d8070babf3e719014ea72ef);
+        
+
+        marker_677b0b4a96b741b6b2ab93247c78c21f.bindPopup(popup_1612327f5795c2bd955d02a88429f211)
+        ;
+
+        
+    
+    
+            var marker_ad9e127812a022d7bba4f4c627e0f2dc = L.marker(
+                [40.84739136, -84.23900155],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_a5671a86833954742334515c3b1ec07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad9e127812a022d7bba4f4c627e0f2dc.setIcon(icon_a5671a86833954742334515c3b1ec07e);
+        
+    
+        var popup_509ab02570fc67d5f03809963a999b17 = L.popup({"maxWidth": 200});
+
+        
+            var html_65d2e043b97b8fdcd89060974d0788e7 = $(`<div id="html_65d2e043b97b8fdcd89060974d0788e7" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103937</p><p><b>Travel cost:</b> 4544.50</p><p><b>Heuristic cost:</b> 1202.24</p></div>`)[0];
+            popup_509ab02570fc67d5f03809963a999b17.setContent(html_65d2e043b97b8fdcd89060974d0788e7);
+        
+
+        marker_ad9e127812a022d7bba4f4c627e0f2dc.bindPopup(popup_509ab02570fc67d5f03809963a999b17)
+        ;
+
+        
+    
+    
+            var marker_7ee35c73a5f1821d1ad2a958a7b2d2e7 = L.marker(
+                [40.84798936, -84.23424753],
+                {}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var icon_f2bccf9071ecfa310659ea9d9e8963fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ee35c73a5f1821d1ad2a958a7b2d2e7.setIcon(icon_f2bccf9071ecfa310659ea9d9e8963fb);
+        
+    
+        var popup_650e3a3249565e36d1985a8d44f063c1 = L.popup({"maxWidth": 200});
+
+        
+            var html_1ad0ebf4dc5eeb82339122db647895e3 = $(`<div id="html_1ad0ebf4dc5eeb82339122db647895e3" style="width: 100.0%; height: 100.0%;"><p><b>Node:</b> 103939</p><p><b>Travel cost:</b> 4573.86</p><p><b>Heuristic cost:</b> 802.01</p></div>`)[0];
+            popup_650e3a3249565e36d1985a8d44f063c1.setContent(html_1ad0ebf4dc5eeb82339122db647895e3);
+        
+
+        marker_7ee35c73a5f1821d1ad2a958a7b2d2e7.bindPopup(popup_650e3a3249565e36d1985a8d44f063c1)
+        ;
+
+        
+    
+    
+            var poly_line_53f3a9369f05515a1c5bd15b5750ac6d = L.polyline(
+                [[40.65873478, -83.97565504], [40.6587167, -83.98551048], [40.6585867, -84.00042709], [40.66591574, -84.00349211], [40.66597124, -84.0110154], [40.66595681, -84.02257715], [40.68056686, -84.01326716], [40.68458606, -84.01182486], [40.70222553, -84.013129], [40.70233894, -84.02767725], [40.70234593, -84.03240226], [40.70232483, -84.05152731], [40.71695485, -84.05162635], [40.71686421, -84.06751589], [40.71685979, -84.07080741], [40.72707594, -84.07078844], [40.72615742, -84.07231277], [40.72785286, -84.07064347], [40.72822485, -84.07026044], [40.73061723, -84.07097629], [40.73067281, -84.07331946], [40.73065793, -84.07441646], [40.73542689, -84.07544148], [40.75288388, -84.07544151], [40.75562987, -84.0754495], [40.75605187, -84.07343149], [40.75565187, -84.0764985], [40.75518597, -84.07936228], [40.75509487, -84.07989551], [40.75392787, -84.08572654], [40.75334387, -84.08952556], [40.75586386, -84.08954354], [40.76126182, -84.08953552], [40.76337781, -84.08956051], [40.77381876, -84.08968446], [40.76896277, -84.10695654], [40.76894577, -84.10875155], [40.77002377, -84.10875854], [40.76993276, -84.11180455], [40.78124827, -84.11568121], [40.78795344, -84.11827642], [40.78745366, -84.12813852], [40.78999868, -84.1282467], [40.80200859, -84.12846045], [40.8018121, -84.14195271], [40.80185758, -84.15668654], [40.81697151, -84.15682146], [40.8169215, -84.16646849], [40.8168465, -84.18057054], [40.8166935, -84.20409461], [40.82441946, -84.20515757], [40.82504846, -84.20499557], [40.82647945, -84.20869557], [40.83472442, -84.20520752], [40.83496042, -84.20523652], [40.83611341, -84.22072356], [40.8378484, -84.23086258], [40.8383734, -84.23103258], [40.84739136, -84.23900155], [40.84798936, -84.23424753]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+    
+            var poly_line_9480a908c98c36156cc719c04717b786 = L.polyline(
+                [[40.65873478, -83.97565504], [40.6587167, -83.98551048], [40.6585867, -84.00042709], [40.66591574, -84.00349211], [40.66597124, -84.0110154], [40.66595681, -84.02257715], [40.68056686, -84.01326716], [40.68458606, -84.01182486], [40.70222553, -84.013129], [40.70233894, -84.02767725], [40.70234593, -84.03240226], [40.70232483, -84.05152731], [40.71695485, -84.05162635], [40.71686421, -84.06751589], [40.71685979, -84.07080741], [40.72707594, -84.07078844], [40.72615742, -84.07231277], [40.72785286, -84.07064347], [40.72822485, -84.07026044], [40.73061723, -84.07097629], [40.73067281, -84.07331946], [40.73065793, -84.07441646], [40.73542689, -84.07544148], [40.75288388, -84.07544151], [40.75562987, -84.0754495], [40.75605187, -84.07343149], [40.75565187, -84.0764985], [40.75518597, -84.07936228], [40.75509487, -84.07989551], [40.75392787, -84.08572654], [40.75334387, -84.08952556], [40.75586386, -84.08954354], [40.76126182, -84.08953552], [40.76337781, -84.08956051], [40.77381876, -84.08968446], [40.76896277, -84.10695654], [40.76894577, -84.10875155], [40.77002377, -84.10875854], [40.76993276, -84.11180455], [40.78124827, -84.11568121], [40.78795344, -84.11827642], [40.78745366, -84.12813852], [40.78999868, -84.1282467], [40.80200859, -84.12846045], [40.8018121, -84.14195271], [40.80185758, -84.15668654], [40.81697151, -84.15682146], [40.8169215, -84.16646849], [40.8168465, -84.18057054], [40.8166935, -84.20409461], [40.82441946, -84.20515757], [40.82504846, -84.20499557], [40.82647945, -84.20869557], [40.83472442, -84.20520752], [40.83496042, -84.20523652], [40.83611341, -84.22072356], [40.8378484, -84.23086258], [40.8383734, -84.23103258], [40.84739136, -84.23900155], [40.84798936, -84.23424753]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f12a406ddac0dc558ef9ed3a1cd6d1e2);
+        
+</script>
